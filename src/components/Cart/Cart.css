@@ -1,0 +1,28 @@
+.cart-container{
+    background-color: #ff990052;
+    margin-top: 0;
+    padding-bottom: 15px;
+    border-radius: 0 0 0 8px;
+    position: sticky;
+    top: 80px;
+}
+.cart-container h2{
+    margin-top: 0;
+    margin-bottom: 25px;
+    padding: 28px 45px;
+    font-size: 24px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+.cart-container p{
+    padding: 0 23px;
+    font-size: 17px;
+    font-weight: 500;
+}
+.cart-container h6{
+    padding: 0 23px;
+    font-size: 19px;
+    font-weight: 500;
+    margin-top: 25px;
+    margin-bottom: 0;
+}
