@@ -26,3 +26,22 @@
     margin-top: 25px;
     margin-bottom: 0;
 }
+
+.clear-cart-btn{
+    width: 90%;
+    margin: 10px 15px;
+    padding: 16px;
+    background-color: #FF3030;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+}
+
+.clear-cart-btn:hover{
+    background-color: #d30505;
+    transition-duration: 300ms;
+}

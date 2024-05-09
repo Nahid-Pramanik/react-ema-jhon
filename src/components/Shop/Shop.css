@@ -10,3 +10,21 @@
     margin-top: 60px;
     justify-items: center;
 }
+
+.proceed-btn {
+    width: 90%;
+    margin: 10px 15px;
+    padding: 16px;
+    background-color: #FF9900;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+}
+
+.link-text{
+    text-decoration: none;
+}

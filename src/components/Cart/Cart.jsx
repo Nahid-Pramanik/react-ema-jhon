@@ -1,8 +1,9 @@
 import './Cart.css';
 import PropTypes from 'prop-types';
+import { RiDeleteBin6Line } from "react-icons/ri";
 
-const Cart = ({ cart }) => {
-
+const Cart = ({ cart, handleClearCart, children }) => {
+    
     let totalPrice = 0;
     let totalShipping = 0;
     let quantity = 0;
@@ -28,12 +29,20 @@ const Cart = ({ cart }) => {
             <p>Total Shipping Charge: ${totalShipping}</p>
             <p>Tax: ${tax.toFixed(2)}</p>
             <h6>Grand Total: ${total.toFixed(2)}</h6>
+
+            <button onClick={handleClearCart} className='clear-cart-btn'>
+                <span className='clear-cart-text'>Clear Cart</span>
+                <RiDeleteBin6Line  />
+            </button>
+            {children}
         </div>
     );
 };
 
 Cart.propTypes = {
-    cart: PropTypes.array.isRequired
+    cart: PropTypes.array.isRequired,
+    handleClearCart: PropTypes.func,
+    children: PropTypes.object
 }
 
 export default Cart;
